@@ -1,0 +1,13 @@
+.flex {
+  display: flex;
+}
+.layer {
+  width: 600px;
+  height: 200px;
+  background-color: red;
+}
+.layer div {
+  width: 400px;
+  height: 200px;
+  background: url('../../assets/avatar.png');
+}

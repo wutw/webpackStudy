@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>//模板获取webpack.config.js里值
+
+</head>
+<body>
+<%= htmlWebpackPlugin.options.date %>
+<!--直接取值-->
+
+<!--直接运行-->
+<% for(var key in htmlWebpackPlugin.files){%>
+   <%= (key)%>  <%= JSON.stringify(htmlWebpackPlugin.files[key]) %>
+<%}%>
+
+<% for(var key in htmlWebpackPlugin.options){%>
+<%= (key)%>  <%=JSON.stringify(htmlWebpackPlugin.options[key]) %>//所有插件参数
+<%}%>
+
+
+
+</body>
+</html>
