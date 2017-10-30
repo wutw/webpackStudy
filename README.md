@@ -99,3 +99,8 @@ postcss-loader功能很强大，可以对less,sass处理
  4.  Module build failed: Error: No PostCSS Config found in:     C:\myProject\webpack3\src\components\layer
  解决：根目录下建立postcss.config.js文件，里面写
  module.exports={};
+
+ ## webpack与gulp区别：
+gulp强调自动化流程，有很多包，支持压缩，转义，监听，es5自动化流程；
+webpack里支持将es6转为es5，更注重模块化开发，用到才打包，代码分块，es6比如vue，react小应用可单用webpack
+但es6大项目两者结合起来用方便

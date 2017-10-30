@@ -1,7 +1,8 @@
 /**
  * Created by wtw on 2017/10/27.
  */
-var htmlWebpackPlugin = require('html-webpack-plugin');
+//var htmlWebpackPlugin = require('html-webpack-plugin');//插件需引用，loader用到自己会找
+import htmlWebpackPlugin from 'html-webpack-plugin';
 //多文件html，js打包
 module.exports = {
     context:__dirname ,//上下文环境默认值，运行脚本的目录
