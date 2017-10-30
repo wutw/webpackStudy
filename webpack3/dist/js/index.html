@@ -1,87 +1,12 @@
-Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module build failed: Error: ϵͳ�Ҳ���ָ����·����
-  
-  - enoent.js:11 notFoundError
-    [webpack3]/[cross-spawn]/lib/enoent.js:11:11
-  
-  - enoent.js:46 verifyENOENT
-    [webpack3]/[cross-spawn]/lib/enoent.js:46:16
-  
-  - enoent.js:33 ChildProcess.cp.emit
-    [webpack3]/[cross-spawn]/lib/enoent.js:33:19
-  
-  
-  - Error: ϵͳ�Ҳ���ָ����·����
-  
-  - compiler.js:76 
-    [webpack3]/[html-webpack-plugin]/lib/compiler.js:76:16
-  
-  - Compiler.js:304 compile
-    [webpack3]/[webpack]/lib/Compiler.js:304:11
-  
-  - Compiler.js:514 applyPluginsAsync.err
-    [webpack3]/[webpack]/lib/Compiler.js:514:14
-  
-  - Tapable.js:202 next
-    [webpack3]/[tapable]/lib/Tapable.js:202:11
-  
-  - CachePlugin.js:78 Compiler.<anonymous>
-    [webpack3]/[webpack]/lib/CachePlugin.js:78:5
-  
-  - Tapable.js:206 Compiler.applyPluginsAsyncSeries
-    [webpack3]/[tapable]/lib/Tapable.js:206:13
-  
-  - Compiler.js:511 compilation.seal.err
-    [webpack3]/[webpack]/lib/Compiler.js:511:11
-  
-  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
-    [webpack3]/[tapable]/lib/Tapable.js:195:46
-  
-  - Compilation.js:680 self.applyPluginsAsync.err
-    [webpack3]/[webpack]/lib/Compilation.js:680:19
-  
-  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
-    [webpack3]/[tapable]/lib/Tapable.js:195:46
-  
-  - Compilation.js:671 self.applyPluginsAsync.err
-    [webpack3]/[webpack]/lib/Compilation.js:671:11
-  
-  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
-    [webpack3]/[tapable]/lib/Tapable.js:195:46
-  
-  - Compilation.js:666 self.applyPluginsAsync.err
-    [webpack3]/[webpack]/lib/Compilation.js:666:10
-  
-  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
-    [webpack3]/[tapable]/lib/Tapable.js:195:46
-  
-  - Compilation.js:662 sealPart2
-    [webpack3]/[webpack]/lib/Compilation.js:662:9
-  
-  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
-    [webpack3]/[tapable]/lib/Tapable.js:195:46
-  
-  - Compilation.js:605 Compilation.seal
-    [webpack3]/[webpack]/lib/Compilation.js:605:8
-  
-  - Compiler.js:508 applyPluginsParallel.err
-    [webpack3]/[webpack]/lib/Compiler.js:508:17
-  
-  - Tapable.js:289 
-    [webpack3]/[tapable]/lib/Tapable.js:289:11
-  
-  - Compilation.js:507 _addModuleChain
-    [webpack3]/[webpack]/lib/Compilation.js:507:11
-  
-  - Compilation.js:477 processModuleDependencies.err
-    [webpack3]/[webpack]/lib/Compilation.js:477:14
-  
-  - next_tick.js:131 _combinedTickCallback
-    internal/process/next_tick.js:131:7
-  
-  - next_tick.js:180 process._tickCallback
-    internal/process/next_tick.js:180:9
-  
-</pre><script type="text/javascript" src="bundle.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app"></div>
+<img src="data:image/png;base64,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">
+
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>

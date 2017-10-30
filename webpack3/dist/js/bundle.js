@@ -149,7 +149,7 @@ function toComment(sourceMap) {
 /* 1 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: Error: ϵͳ�Ҳ���ָ����·����\r\n\n    at notFoundError (C:\\myProject\\webpack3\\node_modules\\cross-spawn\\lib\\enoent.js:11:11)\n    at verifyENOENT (C:\\myProject\\webpack3\\node_modules\\cross-spawn\\lib\\enoent.js:46:16)\n    at ChildProcess.cp.emit (C:\\myProject\\webpack3\\node_modules\\cross-spawn\\lib\\enoent.js:33:19)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:200:12)");
+module.exports = "data:image/png;base64,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"
 
 /***/ }),
 /* 2 */
@@ -534,7 +534,7 @@ var _layer = __webpack_require__(4);
 
 var _layer2 = _interopRequireDefault(_layer);
 
-__webpack_require__(9);
+__webpack_require__(10);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -574,17 +574,20 @@ var _layer3 = __webpack_require__(8);
 
 var _layer4 = _interopRequireDefault(_layer3);
 
+var _layer5 = __webpack_require__(9);
+
+var _layer6 = _interopRequireDefault(_layer5);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/**
- * Created by wtw on 2017/10/28.
- */
 function layer() {
     return {
         name: 'layer',
         tpl: _layer4.default
     };
-}
+} /**
+   * Created by wtw on 2017/10/28.
+   */
 exports.default = layer;
 
 /***/ }),
@@ -754,12 +757,18 @@ return __p
 
 /***/ }),
 /* 9 */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<div class=\"layer\">\r\n    <div>this is layer</div>\r\n\r\n</div>\r\n<!--模板文件-->\r\n";
+
+/***/ }),
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(10);
+var content = __webpack_require__(11);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -784,12 +793,12 @@ if(false) {
 }
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
 // imports
-exports.i(__webpack_require__(11), "");
+exports.i(__webpack_require__(12), "");
 
 // module
 exports.push([module.i, "html,body{\r\n    padding:0;\r\n    margin:0;\r\n    background: chartreuse;\r\n}\r\nul,li{\r\n    padding:0;\r\n    margin:0;\r\n    list-style:none;\r\n}\r\n", ""]);
@@ -798,7 +807,7 @@ exports.push([module.i, "html,body{\r\n    padding:0;\r\n    margin:0;\r\n    ba
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);

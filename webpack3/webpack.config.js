@@ -9,6 +9,7 @@ module.exports = {
     entry:'./src/app.js',
     output:{
         path:__dirname+'/dist/js',//js
+      //  path:path.resolve(__dirname,'dist/js'),
         filename:'bundle.js'
     },
     module:{
@@ -137,7 +138,7 @@ module.exports = {
                     'url-loader?limit=20000&name=assets/[name]-[hash:5].[ext]',
                     'image-webpack-loader'
                 ]*/
-               /* query:{
+               /* query:{//与options作用相同
                     limit:20000,//20k
                     name:'assets/[name]-[hash:5].[ext]'//打包后文件名，占位符name，5位hash，还有后缀名
                 }*/

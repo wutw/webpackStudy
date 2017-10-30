@@ -3,6 +3,7 @@
  */
 import tpl from './layer.less'
 import tpl2 from './layer.tpl'
+import tpl3 from './layer.html'
 function layer(){
     return{
         name:'layer',

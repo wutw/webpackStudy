@@ -3,7 +3,7 @@
 Webpack官网：<http://webpack.github.io/docs/>
 ---
  ## Webpack作用
- 将所需的模块切分到不同的代码库里，按需加载这些依赖，，使初始化加载数更少，
+ 将所需的模块切分到不同的代码库里，按需加载这些依赖，项目用到时才会打包相应依赖，使初始化加载数更少，
  整合第三方类库，视为模块，在项目里引用。
  1. 代码分割
  2. loader
@@ -11,7 +11,7 @@ Webpack官网：<http://webpack.github.io/docs/>
  4. 模块热更新
 
 
- ---
+### 注：没有热更新，此案例可完成html，scss，图片，js打包，es5/es6模块化，适用于前后端分离项目
 
  ## webpack支持模块化方式
  AMD，CommonJS，ES6，require是CommonJS，打包后会换成webpack内置的webpack_require语句
@@ -60,12 +60,16 @@ Webpack官网：<http://webpack.github.io/docs/>
   网站：<https://www.npmjs.com/package/html-webpack-plugin>
   详见工程 ./webpackProject
   ### 3. loaders
-  处理webpack不支持的资源文件（css，图片，coffeejavascript）
+  处理webpack不支持的资源文件（css，图片，coffeejavascript）参考webpack3/
+  将内容打包到js中
    #### css
    对css打包，需要<strong>css-loader</strong>,让打包后的css渲染到页面需要<strong>style-loader</strong>（将css插入到\<style\>标签内，放在header里）
 对浏览器不完全兼容的css，可安装包<strong>postcss-loader</strong>,对css后处理，再安装<strong>autoprefixer</strong>,自动加浏览器前缀  参考：<https://www.npmjs.com/package/postcss-loader>
+postcss-loader功能很强大，可以对less,sass处理
 #### less
  安装<strong>less-loader</strong>,在postcss-loader前处理
+####    html
+用html-loader，把html打包为字符串
  #### babel-loadel
  es6-es5
  指定解析版本给loader传参方法，
